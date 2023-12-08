@@ -1,0 +1,81 @@
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4682B4;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #386d97;
+}
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+    gap: 12px;
+    max-width: 900px;
+    width: 100%;
+    background: #4682B4;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+}
+
+.container-card .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #f5f5ff;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .image {
+    width: 150px;
+    height: 150px;
+    padding: 4px;
+    background: #4682B4;
+    border-radius: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.card {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
